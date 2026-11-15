@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Dashboard</title>
+<link rel="stylesheet" href="style.css">
+
+<script>
+  document.addEventListener("click", function() {
+    document.getElementById("bgMusic").play();
+  }, { once: true });
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- audio -->
+     <audio id="bgMusic" loop>
+  <source src="music/Different-singers-relax-music8.mp3" type="audio/mpeg">
+</audio>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+    <h2 class="logo">Melodies</h2>
+    <ul>
+        <li class="active">Home</li>
+        <li>Search</li>
+        <!-- خوب الان من گزینه سرچ رو به سایدبار اضاف کردم 
+         میتونم اپشن سرچ رو جوری قرار بدم که وقتی کاربر روی سرچ کلیک کرد یه صفحه سرچ باز بشه -->
+        <li>Discover</li>
+        <li>Albums</li>
+        <li>Artists</li>
+        <li>Recently Added</li>
+        <li>Most Played</li>
+        <li>Your Favorites</li>
+        <li>Your Playlist</li>
+        <li>Add Playlist</li>
+        <li>Settings</li>
+    </ul>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        HEADER
+<header class="topbar">
+    <input type="text" placeholder="Search for Music, Album...">
+    <nav>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Premium</a>
+        <button class="login">Login</button>
+        <button class="signup">Sign up</button>
+    </nav>
+</header>
+        <h1>All the <span>Best Songs</span><br> in One Place</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+             Rem minima sit distinctio laboriosam impedit,<br> odit nobis natus dignissimos molestias nihil eaque amet  <br>
+             earum debitis dolore sunt ipsa officia doloremque animi.
+            <br> <br> <br> </p>
+        <div class="hero-buttons">
+            <button class="btn primary">Discover Now</button>
+            <button class="btn secondary">Create Playlist</button>
+        </div>
+    </div>
+</section>
+
+<!-- CARD GRID -->
+<section class="section">
+    <h2>Weekly Top <span>Songs</span></h2>
+    <div class="card-row">
+        <div class="card"><img src="img/photo1.jpg"><p>Song 1</p></div>
+        <div class="card"><img src="img/photo2.jpg"><p>Song 2</p></div>
+        <div class="card"><img src="img/photo3.jpg"><p>Song 3</p></div>
+        <div class="card"><img src="img/photo4.jpg"><p>Song 4</p></div>
+        <div class="card"><img src="img/photo5.jpg"><p>Song 5</p></div>
+    </div>
+</section>
+
+<!-- TRENDING TABLE
+<section class="section">
+    <h2>Trending <span>Songs</span></h2>
+    <table class="trend-table">
+        <tr>
+            <th>#</th><th>Title</th><th>Album</th><th>Time</th>
+        </tr>
+        <tr>
+            <td>1</td><td>Song Name</td><td>Album 1</td><td>3:25</td>
+        </tr>
+        <tr>
+            <td>2</td><td>Another Song</td><td>Album 2</td><td>2:45</td>
+        </tr>
+        <tr>
+            <td>3</td><td>Track</td><td>Album 3</td><td>4:01</td>
+        </tr>
+        <tr>
+            <td>3</td><td>Track</td><td>Album 3</td><td>4:01</td>
+        </tr>
+        <tr>
+            <td>3</td><td>Track</td><td>Album 3</td><td>4:01</td>
+        </tr>
+        <tr>
+            <td>3</td><td>Track</td><td>Album 3</td><td>4:01</td>
+        </tr>
+    </table>
+</section> -->
+
+ <div class="table">
+
+                <div class="row header">
+                    <span>#</span>
+                    <span>Title</span>
+                    <span>Release Date</span>
+                    <span>Played</span>
+                    <span>Time</span>
+                </div>
+
+                <div class="row">
+                    <span>1</span>
+                    <div class="song-info">
+                        <img src="img/photo tabel.jpg">
+                        <div>
+                            <p>Without Me</p>
+                            <small>Eminem</small>
+                        </div>
+                    </div>
+                    <span>May 15, 2002</span>
+                    <span>21,215,618</span>
+                    <span>4:50</span>
+                </div>
+
+                <div class="row">
+                    <span>2</span>
+                    <div class="song-info">
+                        <img src="img/photo tabel2.jpg">
+                        <div>
+                            <p>Mockingbird</p>
+                            <small>Eminem</small>
+                        </div>
+                    </div>
+                    <span>Apr 25, 2005</span>
+                    <span>19,856,112</span>
+                    <span>4:10</span>
+                </div>
+
+                <div class="row">
+                    <span>3</span>
+                    <div class="song-info">
+                        <img src="img/photo tabel3.jpg">
+                        <div>
+                            <p>The Real Slim Shady</p>
+                            <small>Eminem</small>
+                        </div>
+                    </div>
+                    <span>Nov 30, 2023</span>
+                    <span>16,564,223</span>
+                    <span>4:44</span>
+                </div>
+
+            </div>
+
+            <br><br>
+<!-- ARTISTS -->
+<section class="section">
+    <div class="section-head">
+        <h2>Popular <span>Artists</span></h2>
+        <p>View All</p>
+    </div>
+
+    <div class="artist-row">
+        <div class="artist"><img src="img/sabrina carpenter.jfif"><p>Sabrina</p></div>
+        <div class="artist"><img src="img/JASTIN.jpg"><p>Jastin Beber</p></div>
+        <div class="artist"><img src="img/ADEL.jpg"><p>Adele</p></div>
+        <div class="artist"><img src="img/LANA.jpg"><p>Lana Del Ray</p></div>
+        <div class="artist"><img src="img/HARRY.jpg"><p>Harry Styles</p></div>
+        <div class="artist"><img src="img/BILI.jpg"><p>Billie Eilish</p></div>
+    </div>
+</section>
+
+
+<!-- JOIN SECTION
+<section class="join">
+    <div class="join-text">
+        <h2>Join Our Platform</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="signup-card">
+        <h3>Sign Up</h3>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button class="btn primary">Sign Up</button>
+    </div>
+</section> -->
+
+<!-- FOOTER
+<footer class="footer">
+    <div>
+        <h4>About</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div>
+        <h4>Access</h4>
+        <p>Explore</p>
+        <p>Artists</p>
+        <p>Albums</p>
+    </div>
+    <div>
+        <h4>Contact</h4>
+        <p>Social Media</p>
+        <p>Support</p>
+    </div>
+</footer> -->
+ <br> <br> <br> 
+</main>
+</div>
+
+
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+    <h2 class="logo">Melodies</h2>
+
+    <ul class="menu">
+        <li>Home</li>
+        <li class="active">Discover</li>
+        <li>Albums</li>
+        <li>Artists</li>
+
+        <div class="divider"></div>
+
+        <li>Recently Added</li>
+        <li>Most Played</li>
+
+        <div class="divider"></div>
+
+        <li>Your favorites</li>
+        <li>Your playlist</li>
+        <li class="add">Add playlist</li>
+
+        <div class="divider"></div>
+
+        <li>Setting</li>
+        <li class="logout">Logout</li>
+    </ul>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+<!-- GENRES -->
+<section class="section">
+    <div class="section-head">
+        <h2>Music <span>Genres</span></h2>
+        <p>View All</p>
+    </div>
+
+    <div class="grid-4">
+        <div class="genre-card"><img src="img/photo6 (2).jpg"><span>Rap Tracks</span></div>
+        <div class="genre-card"><img src="img/photo9.jpg"><span>Pop Tracks</span></div>
+        <div class="genre-card"><img src="img/photo8.jpg"><span>Rock Tracks</span></div>
+        <div class="genre-card"><img src="img/photo10.jpg"><span>Classic Tracks</span></div>
+    </div>
+</section>
+
+<!-- MOOD PLAYLIST -->
+<section class="section">
+    <div class="section-head">
+        <h2>Mood <span>Playlist</span></h2>
+        <p>View All</p>
+    </div>
+
+    <div class="grid-5">
+        <div class="playlist"><img src="img/SAD SONG.jpg"><span>Sad Songs</span></div>
+        <div class="playlist"><img src="img/sport song.jpg"><span>Sport Songs</span></div>
+        <div class="playlist"><img src="img/WORK song.jpg"><span>Workout</span></div>
+        <div class="playlist"><img src="img/love song.jpg"><span>Love</span></div>
+        <div class="playlist"><img src="img/happy song .jpg"><span>Happy</span></div>
+    </div>
+</section>
+
+<!-- VIDEOS -->
+<section class="section">
+    <div class="section-head">
+        <h2>Music <span>Video</span></h2>
+        <p>View All</p>
+    </div>
+
+    <div class="grid-3">
+        <div class="video-card"><img src=""><p>Shape Of You</p></div>
+        <div class="video-card"><img src=""><p>Roar</p></div>
+        <div class="video-card"><img src=""><p>Shake it Off</p></div>
+        <div class="video-card"><img src=""><p>Someone Like You</p></div>
+        <div class="video-card"><img src=""><p>New Rules</p></div>
+        <div class="video-card"><img src=""><p>Waka Waka</p></div>
+    </div>
+</section>
+
+<!-- ALBUMS -->
+<section class="section">
+    <div class="section-head">
+        <h2>Top <span>Albums</span></h2>
+        <p>View All</p>
+    </div>
+
+    <div class="grid-5">
+        <div class="album"><img src="img/topalbummm.jpg"><p>Album 1</p></div>
+        <div class="album"><img src="img/toop.jpg"><p>Album 2</p></div>
+        <div class="album"><img src="img/topalbum1.jfif"><p>Album 3</p></div>
+        <div class="album"><img src="img/selena.jpg"><p>Album 4</p></div>
+        <div class="album"><img src="img/photo8.jpg"><p>Album 5</p></div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div>
+        <h4>About</h4>
+        <p>Melodies is a music platform...</p>
+    </div>
+    <div>
+        <h4>Melodies</h4>
+        <p>Songs</p>
+        <p>Radio</p>
+        <p>Podcast</p>
+    </div>
+    <div>
+        <h4>Access</h4>
+        <p>Explore</p>
+        <p>Artists</p>
+        <p>Albums</p>
+    </div>
+    <div>
+        <h4>Contact</h4>
+        <p>About</p>
+        <p>Policy</p>
+        <p>Support</p>
+    </div>
+</footer>
+
+<body>
+
+<div class="layout">
+
+    <!-- Main -->
+    <main>
+
+        <!-- Hero -->
+        <section class="heroo">
+            <div class="heroo-contentt">
+                <h1>Eminem</h1>
+            </div>
+        </section>
+
+        <!-- Popular -->
+        <section class="popular">
+            <h2>Popular</h2>
+
+            <div class="table">
+
+                <div class="row header">
+                    <span>#</span>
+                    <span>Title</span>
+                    <span>Release Date</span>
+                    <span>Played</span>
+                    <span>Time</span>
+                </div>
+
+                <div class="row">
+                    <span>1</span>
+                    <div class="song-info">
+                        <img src="img/emiiiinem.jpg">
+                        <div>
+                            <p>Without Me</p>
+                            <small>Eminem</small>
+                        </div>
+                    </div>
+                    <span>May 15, 2002</span>
+                    <span>21,215,618</span>
+                    <span>4:50</span>
+                </div>
+
+                <div class="row">
+                    <span>2</span>
+                    <div class="song-info">
+                        <img src="img/89f601cee3829e23ebbeb1fa3f77a975.jpg">
+                        <div>
+                            <p>Mockingbird</p>
+                            <small>Eminem</small>
+                        </div>
+                    </div>
+                    <span>Apr 25, 2005</span>
+                    <span>19,856,112</span>
+                    <span>4:10</span>
+                </div>
+
+                <div class="row">
+                    <span>3</span>
+                    <div class="song-info">
+                        <img src="img/1b805d618a7f8c8c0f99355253e06ac6.jpg">
+                        <div>
+                            <p>The Real Slim Shady</p>
+                            <small>Eminem</small>
+                        </div>
+                    </div>
+                    <span>Nov 30, 2023</span>
+                    <span>16,564,223</span>
+                    <span>4:44</span>
+                </div>
+
+            </div>
+
+            <button class="btn">Show More</button>
+        </section>
+
+        <!-- Albums -->
+        <section class="cards-section">
+            <h2>Artist's <span>Albums</span></h2>
+            <div class="cards">
+                <div class="card"><img src="img/LANA.jpg"><p>The Eminem Show</p><small>2002</small></div>
+                <div class="card"><img src="img/3165e6ee868ffe98ed799e8f8bd3faf5.jpg"><p>Encore</p><small>2004</small></div>
+                <div class="card"><img src="img/3165e6ee868ffe98ed799e8f8bd3faf5.jpg"><p>Music To Be Murdered By</p><small>2020</small></div>
+                <div class="card"><img src="img/cbc15f661e4a68ecbd377eee962d6e43.jpg"><p>Recovery</p><small>2010</small></div>
+            </div>
+        </section>
+
+        <!-- Fans -->
+        <section class="fans">
+            <h2>Eminem Fans <span>Also Listen To</span></h2>
+            <div class="fans-list">
+                <div class="fan">
+                    <img src="img/photo3.jpg">
+                    <p>50 Cent</p>
+                </div>
+                <div class="fan">
+                    <img src="img/photo9.jpg">
+                    <p>Snoop Dogg</p>
+                </div>
+                <div class="fan">
+                    <img src="img/HARRY.jpg">
+                    <p>Tupac</p>
+                </div>
+                <div class="fan">
+                    <img src="img/eminem4.jpg">
+                    <p>Jay-Z</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+</body>
+
+</main>
+</div>
+
+</body>
+</html>
